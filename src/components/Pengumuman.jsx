@@ -49,18 +49,24 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
                         
                             <div className="DataDiri">
                                 <div className="DDRow">
-                                    <div className="DDType">Nomor peserta</div>
-                                    <div className="DDEqual">:</div>
+                                    <div className="mobileseparator">
+                                        <div className="DDType">Nomor peserta</div>
+                                        <div className="DDEqual">:</div>
+                                    </div>
                                     <div className="DDData"><b>{NomorPeserta}</b></div>
                                 </div>
                                 <div className="DDRow">
-                                    <div className="DDType">Nama</div>
-                                    <div className="DDEqual">:</div>
+                                    <div className="mobileseparator">
+                                        <div className="DDType">Nama</div>
+                                        <div className="DDEqual">:</div>
+                                    </div>
                                     <div className="DDData"><b>{name}</b></div>
                                 </div>
                                 <div className="DDRow">
-                                    <div className="DDType">tanggal lahir</div>
-                                    <div className="DDEqual">:</div>
+                                    <div className="mobileseparator">
+                                        <div className="DDType">tanggal lahir</div>
+                                        <div className="DDEqual">:</div>
+                                    </div>
                                     <div className="DDData"><b>{tanggalLahir}</b></div>
                                 </div>
                             </div>
@@ -69,13 +75,17 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
 
                             <div className="PengumumanHasil">
                                 <div className="PHRow">
-                                    <div className="PHType">PTN</div>
-                                    <div className="PHEqual">:</div>
+                                    <div className="mobileseparator">
+                                        <div className="PHType">PTN</div>
+                                        <div className="PHEqual">:</div>
+                                    </div>
                                     <div className="DDData"><b>{Universitas}</b></div>
                                 </div>
                                 <div className="PHRow">
-                                    <div className="PHType">Program Studi</div>
-                                    <div className="PHEqual">:</div>
+                                    <div className="mobileseparator">
+                                        <div className="PHType">Program Studi</div>
+                                        <div className="PHEqual">:</div>
+                                    </div>
                                     <div className="PHData"><b>{Prodi}</b></div>
                                 </div>
                             </div>
