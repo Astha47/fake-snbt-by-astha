@@ -76,21 +76,25 @@
 .DDRow{
     display: flex;
     width: 100%;
-    height: 25px;
+    min-height: 25px;
+    height: fit-content;
 }
 
 .DDType{
-    height: 100%;
+    min-height: 25px;
+    height: fit-content;
     width: 25%;
 }
 
 .DDEqual{
-    height: 100%;
+    min-height: 25px;
+    height: fit-content;
     width: 8%;
 }
 
 .DDData{
-    height: 100%;
+    min-height: 25px;
+    height: fit-content;
     width: 67%;
 }
 
@@ -113,21 +117,25 @@
 .PHRow{
     display: flex;
     width: 100%;
-    height: 25px;
+    min-height: 25px;
+    height: fit-content;
 }
 
 .PHType{
-    height: 100%;
+    min-height: 25px;
+    height: fit-content;
     width: 25%;
 }
 
 .PHEqual{
-    height: 100%;
+    min-height: 25px;
+    height: fit-content;
     width: 8%;
 }
 
 .PHData{
-    height: 100%;
+    min-height: 25px;
+    height: fit-content;
     width: 67%;
     font-size: 13pt;
 }
