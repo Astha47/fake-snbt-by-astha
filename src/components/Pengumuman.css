@@ -4,6 +4,7 @@
     min-height: fit-content;
     display: flex;
     background: linear-gradient(to right, #5B86E5ff, #36D1DCff);
+    overflow: auto;
 }
 
 .PengumumanMainContainer{
@@ -30,7 +31,8 @@
 
 .judul{
     width: 100%;
-    height: 36px;
+    min-height: 36px;
+    height: fit-content;
     padding-top: 25px;
     padding-bottom: 25px;
     color: white;
@@ -219,13 +221,11 @@
 
 @media (max-width: 780px) {
     .Pengumuman{
-        background: linear-gradient(to right, #83A5CBff, #79B9C9ff);
         min-height: 1080px;
         height: fit-content;
     }
 
     .PengumumanMainContainer{
-        background: none;
         width: calc(100vw - 20px);
         height: 100%;
         padding: 10px;
@@ -250,6 +250,20 @@
         width: 100%;
         padding: 0;
         width: fit-content;
+    }
+
+    .logocontainer img{
+        width: 100%;
+        height: auto;
+    }
+
+    .logocontainer {
+        height: 25vw;
+        min-height: 100px;
+    }
+
+    .DataDiri{
+        padding-top: 30px;
     }
 
 
