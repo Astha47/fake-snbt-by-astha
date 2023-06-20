@@ -202,3 +202,41 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+@media (max-width: 780px) {
+    .Pengumuman{
+        background: linear-gradient(to right, #83A5CBff, #79B9C9ff);
+        min-height: 1080px;
+        height: fit-content;
+    }
+
+    .PengumumanMainContainer{
+        background: none;
+        width: calc(100vw - 20px);
+        height: 100%;
+        padding: 10px;
+    }
+
+    .isi{
+        display: block;
+        height: fit-content;
+    }
+
+    .QRCode{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .QRCode img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .MainText{
+        width: 100%;
+        padding: 0;
+        width: fit-content;
+    }
+
+
+}
