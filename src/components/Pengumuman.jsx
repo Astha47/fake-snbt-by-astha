@@ -64,7 +64,7 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
                                 </div>
                                 <div className="DDRow">
                                     <div className="mobileseparator">
-                                        <div className="DDType">tanggal lahir</div>
+                                        <div className="DDType">Tanggal lahir</div>
                                         <div className="DDEqual">:</div>
                                     </div>
                                     <div className="DDData"><b>{tanggalLahir}</b></div>
