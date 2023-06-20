@@ -11,7 +11,7 @@ const Form = ({ setHasil, setName, setBirthdate, setUniversity, setMajor }) => {
   return (
     <div className="FormMainContainer">
       <div className="form-container">
-        <h2>Form Input</h2>
+        <h2>FAKE PENGUMUMAN SNBT by Astha</h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Nama:</label>
           <input
