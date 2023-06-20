@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from './components/Input';
+import Pengumuman from './components/Pengumuman';
+//import './App.css';
+import { useState } from 'react';
 
 function App() {
+  
+  const [hasil, setHasil] = useState(false)
+  const [name, setName] = useState('');
+  const [birthdate, setBirthdate] = useState('');
+  const [university, setUniversity] = useState('');
+  const [major, setMajor] = useState('');
+
+  let display;
+
+  if (hasil) {
+    display = <Pengumuman name={name} birthdate={birthdate} university={university} major={major} setHasil={setHasil}/>
+    
+  } else {
+    display = <Form setHasil={setHasil} setName={setName} setBirthdate={setBirthdate} setUniversity={setUniversity} setMajor={setMajor} />
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {display}
     </div>
   );
 }
