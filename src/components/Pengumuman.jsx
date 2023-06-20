@@ -49,7 +49,7 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
                         
                             <div className="DataDiri">
                                 <div className="DDRow">
-                                    <div className="DDType">Nomor pesera</div>
+                                    <div className="DDType">Nomor peserta</div>
                                     <div className="DDEqual">:</div>
                                     <div className="DDData"><b>{NomorPeserta}</b></div>
                                 </div>
