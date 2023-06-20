@@ -8,7 +8,8 @@
 
 .PengumumanMainContainer{
     width: 961.39px;
-    height: 642.31px;
+    min-height: 642.31px;
+    height: fit-content;
     background: linear-gradient(to right, #83A5CBff, #79B9C9ff);
     margin: auto;
     border-radius: 5px;
@@ -40,7 +41,7 @@
 
 .isi{
     width: 100%;
-    min-height: calc(100% - 100px - 86px - 30px - 38px);
+    min-height: calc(642.31px - 100px - 86px - 30px - 38px);
     height: fit-content;
     display: flex;
 }
@@ -58,7 +59,7 @@
 
 .MainText{
     width: 58.325%;
-    min-height: calc(100% - 100px - 86px - 30px - 38px);
+    min-height: calc(642.31px - 100px - 86px - 30px - 38px);
     height: fit-content;
     display: block;
     padding-left: 30px;
