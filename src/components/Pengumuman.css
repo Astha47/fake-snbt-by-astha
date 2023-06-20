@@ -279,12 +279,20 @@
         width: fit-content;
     }
 
+    .DDData{
+        width: 100%;
+    }
+
     .PHRow{
         display: block;
     }
 
     .PHType{
         width: fit-content;
+    }
+
+    .PHData{
+        width: 100%;
     }
 
     .mobileseparator{
