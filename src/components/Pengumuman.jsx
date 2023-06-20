@@ -8,6 +8,8 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
         setHasil(false);
     };
 
+    let tanggalLahir = birthdate[8]+birthdate[9]+' - '+ birthdate[5] +birthdate[6] + ' - ' + birthdate[0]+birthdate[1]+birthdate[2]+birthdate[3]
+
     const generateRandomNumber3digit = () => {
         const randomNumber = Math.floor(Math.random() * 900) + 100; // Menghasilkan angka antara 100-999 (3 digit)
         return randomNumber;
@@ -59,7 +61,7 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
                                 <div className="DDRow">
                                     <div className="DDType">tanggal lahir</div>
                                     <div className="DDEqual">:</div>
-                                    <div className="DDData"><b>{birthdate}</b></div>
+                                    <div className="DDData"><b>{tanggalLahir}</b></div>
                                 </div>
                             </div>
 
