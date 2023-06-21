@@ -12,6 +12,7 @@ const Form = ({ setHasil, setName, setBirthdate, setUniversity, setMajor }) => {
     <div className="FormMainContainer">
       <div className="form-container">
         <h2>FAKE PENGUMUMAN SNBT by Astha</h2>
+        <p>Follow me on <a href='https://github.com/Astha47'>GitHub</a></p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Nama:</label>
           <input
