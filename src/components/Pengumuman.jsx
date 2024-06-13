@@ -8,6 +8,9 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
         setHasil(false);
     };
 
+    // ubah nama ke kapital
+    name = name.toUpperCase();
+
     let tanggalLahir = birthdate[8]+birthdate[9]+' - '+ birthdate[5] +birthdate[6] + ' - ' + birthdate[0]+birthdate[1]+birthdate[2]+birthdate[3]
 
     const generateRandomNumber3digit = () => {
@@ -25,11 +28,13 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
         const randomNumber = Math.floor(Math.random() * 900000) + 100000; // Menghasilkan angka antara 100000-999999 (6 digit)
         return randomNumber;
     };
-      
-    let Universitas = generateRandomNumber3digit() + ' - ' + university.toUpperCase();
-    let Prodi = generateRandomNumber6digit() + ' - ' + major.toUpperCase();
 
-    let NomorPeserta = '23 - '+ generateRandomNumber4digit() +' - '+ generateRandomNumber6digit();
+    let univcode = generateRandomNumber3digit()
+      
+    let Universitas = univcode + ' - ' + university.toUpperCase();
+    let Prodi = `${univcode}${generateRandomNumber4digit()} - ${major.toUpperCase()}`;
+
+    let NomorPeserta = '24 - '+ generateRandomNumber4digit() +' - '+ generateRandomNumber6digit();
       
 
     return (
@@ -39,7 +44,7 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
                     <img src={HomeImage} alt="" />
                 </div>
                 <div className="judul">
-                    PENGUMUMAN HASIL SELEKSI SNBT SNPMB 2023
+                    PENGUMUMAN HASIL SELEKSI SNBT SNPMB 2024
                 </div>
                 <div className="isi">
                     <div className="QRCode">
@@ -71,7 +76,7 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
                                 </div>
                             </div>
 
-                            <div className="announce"><b>Selamat! Anda dinyatakan lulus seleksi SNBT SNPMB 2023</b> di</div>
+                            <div className="announce"><b>Selamat! Anda dinyatakan lulus seleksi SNBT SNPMB 2024</b> di</div>
 
                             <div className="PengumumanHasil">
                                 <div className="PHRow">
@@ -91,7 +96,7 @@ function Pengumuman({name, birthdate, university, major, setHasil}) {
                             </div>
 
                             <div className="Daful">Persyaratan pendaftaran ulang calon mahasiswa baru dapat dilihat di{' '}<span style={{ color: 'blue' }}>sini</span>.</div>
-                            <div className="CetakKartu">Anda dapat mencetak kembali Kartu Tanda Peserta UTBK-SNBT 2023 di{' '}<span style={{ color: 'blue' }}>sini</span>.</div>
+                            <div className="CetakKartu">Anda dapat mencetak kembali Kartu Tanda Peserta UTBK-SNBT 2024 di{' '}<span style={{ color: 'blue' }}>sini</span>.</div>
                             <div className="TombolCetak">
                                 <button id="Cetak">UNDUH PENGUMUMAN KETUA SNPMB (PDF)</button>
                             </div>
